@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/geral.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <title>Login</title>
+    <link rel="website icon" type="png" href="/img/discount2.svg">
+
+</head>
+<body class="card">
+    <div id="pagina">
+        <!--Div acima do header-->
+        <div id="DivAcimaHeader"></div>
+        <!--Header começa aqui-->
+        <div id="header">
+            <!--DivLogo começa aqui-->
+            <div id="DivLogo">
+                <div id="DivLogoUm">
+                <img src="../img/discount2.svg" alt="Logo" id="DiscountLogo">
+                </div>
+                <div id="DivLogoDois">
+                <h1><a href="../page/index.html">DiscountsFarm</a></h1>
+                </div>
+            </div>
+            <!--DivLogo termina aqui-->
+            <!--menus começam aqui-->
+            <nav id="nav">
+                <button id="btnMenu">
+                    <span id="hamburguer"></span>
+                  </button>
+                <div id="UlMenu">
+                    <ul id="menu">
+                        <li class="aMargin"><a href="/">Home</a></li>
+                        <li class="aMargin"><a href="/login">Login</a></li>
+                        <li class="aMargin"><a href="/inserirjogo">Inserir Jogo</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!--menus terminam aqui-->
+        </div>
+        <!--Div abaixo do header-->
+        <div id="DivAbaixoHeader"></div>
+        <div id="DivConteudo">
+            <header>
+                <!-- <h1>LOGAR-SE</h1> -->
+            </header>
+            <div id="principal">
+                <!-- Começo do formulario de login e cadastro -->
+                <div class="container right-panel-active">
+                    <!-- Cadastrar -->
+                    <div class="container__form container--signup">
+                        <form action="#" class="form" id="form1">
+                            <h2 class="form__title">Cadastrar</h2>
+                            <input type="text" placeholder="Nome Completo" class="input" />
+                            <input type="email" placeholder="Email" class="input" />
+                            <input type="password" placeholder="Senha" class="input" />
+                            <button class="btn">Cadastrar</button>
+                        </form>
+                    </div>
+                
+                    <!-- Logar -->
+                    <div class="container__form container--signin">
+                        <form action="#" class="form" id="form2">
+                            <h2 class="form__title">Logar</h2>
+                            <input type="text" placeholder="Usuário" class="input" th:text="${usuario.nome_usuario}"/>
+                            <input type="password" placeholder="Senha" class="input" th:text="${usuario.senha_usuario}"/>
+                            <a href="./redefinir.html" class="link">Esqueceu sua senha?</a>
+                            <button class="btn">Logar</button>
+                        </form>
+                    </div>
+                
+                    <!-- Overlay -->
+                    <div class="container__overlay">
+                        <div class="overlay">
+                            <div class="overlay__panel overlay--left">
+                                <button class="btn" id="signIn">Logar</button>
+                            </div>
+                            <div class="overlay__panel overlay--right">
+                                <button class="btn" id="signUp">Cadastrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do formulario de login e cadastro -->
+            </div>    
+        </div>
+        <!-- Começo Footer -->
+        <footer>
+            <b>DiscountsFarm&copy;</b><sup>2023</sup><br>
+            Todos os Direitos reservados
+        </footer>
+        <!-- Fim Footer -->
+    <script src="/js/login.js"></script>
+    </div>
+    
+</body>
+</html>
