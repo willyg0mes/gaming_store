@@ -25,7 +25,7 @@ import jakarta.persistence.criteria.Path;
 @Controller
 public class StoreController {
 
-	private static String caminhoImagens = "d:\\Usuarios\\07475213102\\Documents\\Discounts\\";
+	private static String caminhoImagens = "d:\\gaming_store\\";
 	
 	@Autowired
 	private StoreRepository gr;
