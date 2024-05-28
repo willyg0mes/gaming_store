@@ -15,54 +15,54 @@
     --card-height: 65vh;
     --card-width: calc(var(--card-height) / 1.5);
   }
-.card {
-  background: #191c29;
-  padding: 3px;
-  position: relative;
-  border-radius: 6px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  color: rgb(88 199 250 / 0%);
-  font-family: cursive;
-}
 
-  .card::before {
-    content: "";
-    width: 101.9%;
-    height: 101%;
-    border-radius: 8px;
-    /* background-image: linear-gradient(
-      var(--rotate)
-      , #5ddcff, #7f00d4 43%, #c20000); */
+  body.rgb {
+    background: #191c29;
+    /* padding: 3px; */
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    display: flex;
+    color: rgb(88 199 250 / 0%);
+    font-family: cursive;
+  }
+  
+  body.rgb::before {
+      content: "";
+      width: 101.9%;
+      height: 101%;
+      border-radius: 8px;
+      background-image: linear-gradient(
+        var(--rotate)
+        , #5ddcff, #7f00d4 43%, #c20000);
+        position: absolute;
+        z-index: -1;
+        top: -1%;
+        left: -2%;
+        animation: spin 2.5s linear infinite;
+    }
+    
+    body.rgb::after {
       position: absolute;
+      content: "";
+      top: calc(var(--card-height) / 6);
+      left: 0;
+      right: 0;
       z-index: -1;
-      top: -1%;
-      left: -2%;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      transform: scale(0.8);
+      filter: blur(calc(var(--card-height) / 6));
+      background-image: linear-gradient(
+        var(--rotate)
+        , #5ddcff, #3c67e3 43%, #4e00c2);
+        opacity: 1;
+      transition: opacity .5s;
       animation: spin 2.5s linear infinite;
-  }
-  
-  .card::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    /* background-image: linear-gradient(
-      var(--rotate)
-      , #5ddcff, #3c67e3 43%, #4e00c2); */
-      opacity: 1;
-    transition: opacity .5s;
-    animation: spin 2.5s linear infinite;
-  }
-  
+    }
   @keyframes spin {
     0% {
       --rotate: 0deg;
@@ -100,15 +100,60 @@ body {
 /* Começo do Header, Menu, Navbar, Logo */
 #DivAcimaHeader {
     width: 100%;
-    height: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #770000;
+
+}
+#tema {
+  margin: 5px;
+  font-weight: bold;
+}
+#toggle {
+  position: relative;
+  display: none;
+}
+.toggle + label {
+  width: 32px;
+  height: 20px;
+  background: lightgray;
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  padding: 2px;
+  margin: 4px 5px;
+  transition: 200ms;
+  cursor: pointer;
+}
+.toggle + label :before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  display: block;
+  border-radius: 50%;
+  right: unset;
+  left: 2px;
+  top: 2px;
+  transition: 200ms;
+}
+.toggle:checked + label {
+  background: blue;
+}
+.toggle:checked + label :before {
+  content: '';
+  left: calc(100% - 22px);
+  box-shadow: 0 4px 4px rgb(0, 0, 0 / 10%);
 }
 #header {
     color: #ffffff;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     height: 50px;
     background-color: #770000;
     margin: 0 auto;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     display: flex;
     justify-content: space-between;
 }
@@ -216,11 +261,16 @@ nav {
       display: block;
       visibility: visible;
       overflow-y: auto;
+      
     }
     #menu li {
       padding: 1rem;
       /* margin: 0 1rem; */
       border-bottom: 2px double rgba(255, 255, 255, 0.267);
+    }
+    nav {
+      justify-content: flex-end;
+
     }
     #nav a {
         color: #070707;
@@ -271,13 +321,21 @@ nav {
 footer {
     color: #ffffff;
     background-color: #3a1515;
-    max-width: 1490px;
-    height: 50px;
+    max-width: 1920px;
+    height: auto;
     margin: 0 auto;
     margin-top: 1%;
-    border-radius: 1rem;
-    padding-left: 10px;
-    padding-top: 5px;
+    /* border-radius: 1rem; */
+    padding: 10px 0 10px 0;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+footer p {
+  margin-bottom: 3px;
+  padding-bottom: 3px;
 }
 /* Bordas do Slide  */
 /* Começo Slide */

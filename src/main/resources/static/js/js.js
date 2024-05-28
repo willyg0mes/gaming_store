@@ -1,3 +1,10 @@
+//começo background rotate
+const toggle = document.getElementById('toggle')
+
+  toggle.addEventListener('change' , () => {
+    document.body.classList.toggle('rgb')
+  })
+//final background rotate
 //começo menu
 const btnmenu = document.getElementById('btnMenu')
 
