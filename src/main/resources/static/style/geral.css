@@ -75,7 +75,7 @@
 
 /* Começo da barra de rolagem */
 body::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
   }
   
   body::-webkit-scrollbar-track {
@@ -98,9 +98,9 @@ body {
     background-color: #571e1e;
 }
 /* Começo do Header, Menu, Navbar, Logo */
-#DivAcimaHeader {
-    width: 100%;
-    height: 40px;
+#temargb {
+    width: 10%;
+    /* height: 40px; */
     display: flex;
     justify-content: flex-end;
     background-color: #770000;
@@ -109,14 +109,15 @@ body {
 #tema {
   margin: 5px;
   font-weight: bold;
+  font-size: 0.7em;
 }
 #toggle {
   position: relative;
   display: none;
 }
 .toggle + label {
-  width: 32px;
-  height: 20px;
+  width: 12px;
+  height: 10px;
   background: lightgray;
   display: block;
   position: relative;
@@ -129,8 +130,8 @@ body {
 .toggle + label :before {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background: white;
   display: block;
   border-radius: 50%;
@@ -149,33 +150,37 @@ body {
 }
 #header {
     color: #ffffff;
-    /* max-width: 1500px; */
-    height: 50px;
+    height: 80px;
     background-color: #770000;
     margin: 0 auto;
-    /* border-radius: 1rem; */
     display: flex;
-    justify-content: space-between;
 }
 #DivLogo {
     height: auto;
     margin-left: 1%;
     display: flex;
     justify-content: space-between;
+    width: 40%;
+    margin-top: 10px;
 }
 #DiscountLogo {
     width: 50px;
     height: 50px;
 }
 #DivLogoUm {
-    width: 30%;
-    height: 50px;
+    width: 40%;
+    height: 80px;
+    display: flex;
 }
 #DivLogoDois {
     width: 70%;
-    height: 50px;
+    height: 80px;
 }
 
+#menunav {
+  width: 60%;
+  display: flex;
+}
 /* Começo do menuhamburguer */
 /* Começo do Navbar normal */
 ul {
@@ -187,16 +192,15 @@ ul {
 #UlMenu {
     width: 100%;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-weight: bold;
 }
 
 #menu {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
+    width: 30%;
+    padding-top: 29px;
 }
 
 #BotoesMenu {
@@ -233,7 +237,7 @@ nav {
     display: flex;
     justify-content: space-around;
     /* height: 40px; */
-    width: 25%;
+    width: 90%;
 }
 
 #btnMenu {

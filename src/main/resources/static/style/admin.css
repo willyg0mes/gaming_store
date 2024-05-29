@@ -27,5 +27,10 @@
     border-color: #0d6efd;
 }
 .BotaoEnviar {
-    margin-top: 0.5rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: #0367a6;
+    background-image: linear-gradient(90deg, #0367a6 0%, #008997 74%);
 }

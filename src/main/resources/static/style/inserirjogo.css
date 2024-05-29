@@ -27,8 +27,9 @@ header h1 {
   height: auto;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.178);
+  border-radius: 0.7rem;
   margin-bottom: 3%;
-  background-color: #181a217a;
+  background-color: #e9e9e9;
 }
 #secaoinserir {
   max-width: 1500px;
@@ -47,47 +48,33 @@ header h1 {
 }
 .formTitulo {
   width: 40%;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.178);
-  border-radius: 0.3rem;
+  
   background-color: rgba(127, 255, 212, 0.212);
 }
 .formSubT {
   width: 30%;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.178);
-  border-radius: 0.3rem;
+  
   background-color: rgba(127, 255, 212, 0.212);
 }
 .formProm {
   width: 20%;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.178);
-  border-radius: 0.3rem;
+  
   background-color: rgba(127, 255, 212, 0.212);
 }
 .formData{
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.178);
-  border-radius: 0.3rem;
+  
   background-color: rgba(127, 255, 212, 0.212);
 }
 .formPreco{
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.178);
-  border-radius: 0.3rem;
+  
   background-color: rgba(127, 255, 212, 0.212);
 }
 .formPrecoAnt{
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.178);
-  border-radius: 0.3rem;
+  
   background-color: rgba(127, 255, 212, 0.212);
 }
 .formDescon{
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.178);
-  border-radius: 0.3rem;
+  
   background-color: rgba(127, 255, 212, 0.212);
 }
 
@@ -100,9 +87,6 @@ input#file {
   color: white;	
 }
 
-label {
-  font-size: 1.7rem !important;
-}
 @media screen and (max-width:730px) {
   #secaoinserir {
     width: 600px;
@@ -114,7 +98,11 @@ label {
   }
 }
 #BotaoEnviar {
+  color: white;
+  font-weight: bold;
   margin-bottom: 2rem;
+  border-color: #0367a6;
+  background-image: linear-gradient(90deg, #0367a6 0%, #008997 74%);
 }
 canvas
 {
