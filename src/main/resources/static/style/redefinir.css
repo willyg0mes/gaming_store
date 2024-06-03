@@ -7,3 +7,7 @@
     border-radius: 2px;
     border: none;
 }
+p {
+	text-align: center;
+    color: #ffff;
+}

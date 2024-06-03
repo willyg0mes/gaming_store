@@ -239,3 +239,7 @@ body {
 		z-index: 5;
 	}
 }
+p {
+	text-align: center;
+    color: #ffff;
+}

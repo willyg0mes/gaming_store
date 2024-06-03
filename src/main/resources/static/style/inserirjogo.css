@@ -108,7 +108,7 @@ canvas
 {
   width: 250px;
   height: 350px;
-  box-shadow: 3px 3px 9px black;
+  box-shadow: 0.5px 3px 9px black;
 }
 /* #VerImage {
   display: flex;
@@ -117,3 +117,8 @@ canvas
 #file {
   margin-top: 0.2rem;
 }
+p {
+	text-align: center;
+    color: #ffff;
+}
+

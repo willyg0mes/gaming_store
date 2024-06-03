@@ -34,3 +34,7 @@
     border-color: #0367a6;
     background-image: linear-gradient(90deg, #0367a6 0%, #008997 74%);
 }
+p {
+	text-align: center;
+    color: #ffff;
+}

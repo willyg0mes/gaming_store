@@ -126,6 +126,7 @@ body {
   margin: 4px 5px;
   transition: 200ms;
   cursor: pointer;
+  box-sizing: unset;
 }
 .toggle + label :before {
   content: '';
@@ -185,7 +186,8 @@ body {
 /* Começo do Navbar normal */
 ul {
     display: inline-flex;
-    
+    margin-bottom: 0;
+    padding-left: 0;
     align-items: center;
 }
 
@@ -194,6 +196,7 @@ ul {
     display: inline-flex;
     justify-content: flex-end;
     font-weight: bold;
+    box-sizing: unset;
 }
 
 #menu {
