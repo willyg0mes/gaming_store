@@ -48,83 +48,72 @@
             <!--menus terminam aqui-->
         </div>
         <!--Final Div header-->
-        <!--Div abaixo da Div header-->
-        <div id="DivAbaixoHeader"></div>
-        <!-- Div SlideShow começa aqui -->
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="/img/backgroundnoblur1500x500.png" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-              <img src="/img/background1500x500.gif" style="width:100%">
-            </div>    
-        </div>
-        <br>        
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-            <!-- Começo da Div pai dos botões do headerz -->
-            <div id="DivBotoesPai">
-                <!-- Começo das Divs dos botões -->
-                <div class="DivBotoes">
-                    <a href="#">Multiplayer</a>
-                </div>
-                <div class="DivBotoes">
-                    <a href="#">Singleplayer</a>
-                </div>
-                <div class="DivBotoes">
-                    <a href="#">Cooperativo</a>
-                </div>
-                <div class="DivBotoes">
-                    <a href="#">FPS</a>
-                </div>
-                <!-- Fim das Divs dos botões -->
-            </div>
-        <!-- Div SlideShow termina aqui -->
+        <div class="conteudogeral">
+            <div class="conteudoesquerda">
 
-        <!-- Começo da Div dos conteudos -->
-        <div id="DivConteudo">
-            <!-- Titulo do Conteudo -->
-            <div id="ConteudoGame">
-                <h1>Games</h1>
             </div>
-            <!-- Começo da Div pai dos conteudos -->
-            <div id="PaiDosConteudos">
-                <!-- Começo do Fi 1 do Conteudo Linkado -->
-                    <div class="FiConteudo" th:each="stores : ${store}">
-                        <a th:href="${stores.linkGame}" target="_blank">
-                        <img th:src="@{/paginas/mostrarImagem/{imagem}(imagem=${stores.nomeImagem})}">
-                        </a>
-                        <div class="BackFi">
-                            <!-- Titulo E SubTitulo -->
-                            <div class="DivGamesLayouth3">
-                                <h3><span th:text="${stores.titulo}"></span>
-                                    <h4><span th:text="${stores.subTitulo}"></span></h4></h3>
-                            </div>
-                            <!-- PROMOÇÂO ESPECIAL -->
-                            <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
-                            <!-- Termino de promoção -->
-                            <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
-                            <!-- Preços e Descontos -->
-                            <div calss="DivGamesLayoutPrices">
-                                <!-- Desconto -->
-                                <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
-                                <!-- Preço anterior e atual -->
-                                <div class="DiscontoPreco">
-                                    <!-- Preço anterior -->
-                                    <div class="PrecoOriginal">R$ <span th:text="${stores.precoAnterior}"></span></div>
-                                    <!-- Preço atual -->
-                                    <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span></div>
+            <div class="conteudodireita">
+                <!--Div abaixo da Div header-->
+                <div id="DivAbaixoHeader"></div>
+                <!-- Div SlideShow começa aqui -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="/img/backgroundnoblur1500x500.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/img/background1500x500.gif" style="width:100%">
+                    </div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <!-- Div SlideShow termina aqui -->
+                <!-- Começo da Div dos conteudos -->
+                <div id="DivConteudo">
+                    <!-- Titulo do Conteudo -->
+                    <div id="ConteudoGame">
+                        <h1>Games</h1>
+                    </div>
+                    <!-- Começo da Div pai dos conteudos -->
+                    <div id="PaiDosConteudos">
+                        <!-- Começo do Fi 1 do Conteudo Linkado -->
+                            <div class="FiConteudo" th:each="stores : ${store}">
+                                <a th:href="${stores.linkGame}" target="_blank">
+                                <img th:src="@{/paginas/mostrarImagem/{imagem}(imagem=${stores.nomeImagem})}">
+                                </a>
+                                <div class="BackFi">
+                                    <!-- Titulo E SubTitulo -->
+                                    <div class="DivGamesLayouth3">
+                                        <h3><span th:text="${stores.titulo}"></span>
+                                            <h4><span th:text="${stores.subTitulo}"></span></h4></h3>
+                                    </div>
+                                    <!-- PROMOÇÂO ESPECIAL -->
+                                    <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
+                                    <!-- Termino de promoção -->
+                                    <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
+                                    <!-- Preços e Descontos -->
+                                    <div calss="DivGamesLayoutPrices">
+                                        <!-- Desconto -->
+                                        <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
+                                        <!-- Preço anterior e atual -->
+                                        <div class="DiscontoPreco">
+                                            <!-- Preço anterior -->
+                                            <div class="PrecoOriginal">R$ <span th:text="${stores.precoAnterior}"></span></div>
+                                            <!-- Preço atual -->
+                                            <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div> 
-                <!-- Fim do Fi 1 do Conteudo Linkado -->
+                        <!-- Fim do Fi 1 do Conteudo Linkado -->
+                    </div>
+                    <!-- Fim da Div pai dos conteudos -->
+                </div>
+                <!-- Fim da Começo da Div dos conteudos -->
             </div>
-            <!-- Fim da Div pai dos conteudos -->
         </div>
-        <!-- Fim da Começo da Div dos conteudos -->
         <!-- Começo Footer -->
         <footer>
             <p><b>DiscountsFarm&copy;</b><sup>2023</sup></p>

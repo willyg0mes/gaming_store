@@ -383,3 +383,17 @@ footer p {
 }
 /* Final Slide */
 
+.conteudogeral{
+  display: flex;
+}
+
+.conteudoesquerda {
+  width: 15%;
+  background-color: #721E1E;
+
+}
+.conteudodireita {
+  width: 85%;
+  background-color: #571E1E;
+}
+
