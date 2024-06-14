@@ -4,6 +4,9 @@ const toggle = document.getElementById('toggle')
   toggle.addEventListener('change' , () => {
     document.body.classList.toggle('rgb')
   })
+  toggle.addEventListener('change' , () => {
+    document.conteudodireita.classList.toggle('temab')
+  })
 //final background rotate
 //começo menu
 const btnmenu = document.getElementById('btnMenu')

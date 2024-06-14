@@ -31,13 +31,15 @@
                     <button id="btnMenu">
                         <span id="hamburguer"></span>
                       </button>
-                    <!-- <div id="UlMenu">
+                    <div id="UlMenu">
                         <ul id="menu">
                             <li class="aMargin"><a href="/">Home</a></li>
-                            <li class="aMargin"><a href="/login">Login</a></li>
+                            <li class="aMargin"><a href="/bilioteca">Biblioteca</a></li>
+                            <li class="aMargin"><a href="/saves">Salvos</a></li>
                             <li class="aMargin"><a href="/inserirjogo">Inserir Jogo</a></li>
+                            <li class="aMargin"><a href="/users">Usuários</a></li>
                         </ul>
-                    </div> -->
+                    </div>
                 </nav>
                 <div id="temargb">
                     <p id="tema">Fru Fru</p>
@@ -48,22 +50,52 @@
             <!--menus terminam aqui-->
         </div>
         <!--Final Div header-->
-        <div class="conteudogeral">
-            <div class="conteudoesquerda">
+        <div id="conteudogeral">
+            <div id="conteudoesquerda">
                 <div id="menuesquerda">
-                    <div class="menulateral" id="menuhome"></div>
-                    <div class="menulateral" id="menubiblioteca"></div>
-                    <div class="menulateral" id="menusalvos"></div>
-                    <div class="menulateral" id="menuinserir"></div>
-                    <div class="menulateral" id="menuusuarios"></div>
+                    <a href="/">
+                        <div class="menulateral" id="menuhome">
+                            <img src="/img/home.svg" alt="Home">
+                            <h2>Home</h2>
+                        </div>
+                    </a>
+                    <a href="/biblioteca">
+                        <div class="menulateral" id="menubiblioteca">
+                            <img src="/img/library.svg" alt="library">
+                            <h2>Bilioteca</h2>
+                        </div>
+                    </a>
+                    <a href="/saves">
+                        <div class="menulateral" id="menusalvos">
+                            <img src="/img/save.svg" alt="saves">
+                            <h2>Salvos</h2>
+                        </div>
+                    </a>
+                    <a href="/inserirjogo">
+                        <div class="menulateral" id="menuinserir">
+                            <img src="/img/add.svg" alt="add">
+                            <h2>Inserir</h2>
+                        </div>
+                    </a>
+                    <a href="/users">
+                        <div class="menulateral" id="menuusuarios">
+                            <img src="/img/users.svg" alt="users">
+                            <h2>Usuários</h2>
+                        </div>
+                    </a>
                 </div>
-                <div id="pesquisa"></div>
+                <div id="pesquisa">
+                    <input type="search" name="pesquisa" id="search">
+                    <button type="submit" id="searching" onclick="myFunction(SubmitEvent)">
+                        <img src="/img/search.svg" alt="search">
+                    </button>
+                </div>
                 <div id="categorias">
-                    <div id="categoriastt"></div>
-                    <div class="categorias"></div>
-                    <div class="categorias"></div>
-                    <div class="categorias"></div>
-                    <div class="categorias"></div>
+                    <div id="categoraistt"><h2>CATEGORIAS</h2></div>
+                    <div class="categorias"><h3>Multiplayer</h3></div>
+                    <div class="categorias"><h3>Singleplayer</h3></div>
+                    <div class="categorias"><h3>Cooperativo</h3></div>
+                    <div class="categorias"><h3>MMORPG</h3></div>
                 </div>
             </div>
             <div class="conteudodireita">
