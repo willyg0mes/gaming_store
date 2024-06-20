@@ -20,9 +20,10 @@
 .DivBotoes:hover {
     background-color: #3a1515b7;
     transform: scale(1.1);
-	transition: all .2s;
+    transition: all .2s;
     filter: brightness(1.25);
 }
+
 #DivConteudo {
     max-width: 1500px;
     height: auto;
@@ -36,6 +37,7 @@
 
 
 }
+
 #ConteudoGame {
     width: 100%;
     height: 40px;
@@ -43,12 +45,14 @@
     border-radius: 1rem 0 0 0;
     margin-bottom: 3%;
     padding-bottom: 1%;
-    
+
 }
+
 h1 {
     text-align: center;
     color: #ffff;
 }
+
 #PaiDosConteudos {
     width: 80%;
     height: auto;
@@ -58,28 +62,32 @@ h1 {
     background-color: rgba(0, 0, 0, 0);
     justify-content: space-around;
 }
+
 .FiConteudo {
- background-color: aliceblue;
- margin: 0 auto;
- width: 250px;
- height: 500px;
- display: flex;
- align-items: flex-end;
- flex-wrap: wrap;
- margin-bottom: 5rem;
- box-shadow: 3px 3px 9px black;
+    background-color: aliceblue;
+    margin: 0 auto;
+    width: 250px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    box-shadow: 3px 3px 9px black;
 }
+
 .FiConteudo:hover {
     background-color: #551e1e;
     transform: scale(1.05);
-	transition: all .2s;
+    transition: all .2s;
     filter: brightness(1.25);
-   }
+}
+
 .FiConteudo img {
     width: 250px;
     height: 350px;
     margin-bottom: -4px;
 }
+
 .BackFi {
     /* background-image: url(../img/divgameslayout.jpg); */
     background: linear-gradient(45deg, rgb(170, 2, 2), rgba(172, 30, 30, 0.83));
@@ -88,6 +96,7 @@ h1 {
     text-align: center;
     color: #ffff;
 }
+
 .Disconto {
     float: left;
     line-height: 34px;
@@ -96,10 +105,11 @@ h1 {
     font-weight: 500;
     color: #ffffff;
     background: #5e5e5e;
-    margin-left: 17%;
+    /* margin-left: 17%; */
     border: 1px solid;
     border-right: none;
 }
+
 .DiscontoPreco {
     line-height: 13px;
     padding: 0 1px 0 8px;
@@ -113,6 +123,7 @@ h1 {
     border: 1px solid;
     /* border-left: none; */
 }
+
 .PrecoOriginal {
     position: relative;
     width: fit-content;
@@ -120,6 +131,7 @@ h1 {
     font-size: 11px;
     line-height: 12px;
 }
+
 .PrecoOriginal:before {
     content: '';
     left: 0px;
@@ -130,12 +142,14 @@ h1 {
     transform: skewY(-8deg);
     box-shadow: 0 0 2px black;
 }
+
 .PrecoDisconto {
     color: #000000;
     line-height: 16px;
     font-size: 15px;
     text-shadow: 2px 2px 10px black;
 }
+
 .SemPreco {
     width: 250px;
     height: 50px;
@@ -143,6 +157,7 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
 .SemPrecoOriginal {
     /* position: relative; */
     width: auto;
@@ -157,13 +172,16 @@ h1 {
     padding-right: 5px;
     border: 1px solid;
 }
+
 p {
     text-align: center;
     color: #ffff;
 }
+
 .DivGamesLayouth3 {
     height: 50px;
 }
+
 #DivGamesLayoutSemDescontoDois {
     width: 90px;
     height: 35px;
@@ -176,14 +194,118 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 .DivGamesLayouth2 {
     width: 100%;
     height: 25px;
 }
+
 .DivGamesLayoutPromo {
     width: 100%;
     height: 25px;
 }
+
 .DivGamesLayoutPrices {
-    height: 50px;
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+
+    .FiConteudo {
+        background-color: aliceblue;
+        margin: 0 auto;
+        width: 180px;
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+        box-shadow: 3px 3px 9px black;
+    }
+
+    .FiConteudo img {
+        width: 180px;
+        height: 200px;
+        margin-bottom: -4px;
+    }
+
+    .BackFi {
+        /* background-image: url(../img/divgameslayout.jpg); */
+        background: linear-gradient(45deg, rgb(170, 2, 2), rgba(172, 30, 30, 0.83));
+        width: 250px;
+        height: 100px;
+        text-align: center;
+        color: #ffff;
+    }
+
+    .DivGamesLayouth3 {
+        height: 33px;
+        font-size: 0.8em;
+        margin-top: 3px;
+
+    }
+
+    .DivGamesLayouth3 h3,
+    h4 {
+        font-size: 1em;
+    }
+    .DivGamesLayouth2 {
+        width: 100%;
+        font-size: 0.7em;
+        height: 15px;
+    }
+    .DivGamesLayoutPromo {
+        width: 100%;
+        height: 18px;
+        font-size: 0.7em;
+    }
+    .Disconto {
+        float: left;
+        line-height: 22px;
+        /* outline-width: 5px; */
+        padding: 0;
+        padding-right: 3px;
+        padding-left: 3px;
+        font-size: 26px;
+        font-weight: 500;
+        color: #ffffff;
+        background: #5e5e5e;
+        /* margin-left: 17%; */
+        border: 1px solid;
+        border-right: none;
+        font-size: 1em;
+    }
+    .DiscontoPreco {
+        line-height: 2px;
+        padding: 0 1px 0 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        background: #ffffff;
+        float: left;
+        height: 22px;
+        border: 1px solid;
+        /* border-left: none; */
+        font-size: 0.1em;
+    }
+    .PrecoOriginal {
+        position: relative;
+        /* width: fit-content; */
+        color: #ff0000;
+        font-size: 9px;
+        line-height: 12px;
+        padding-top: 1px;
+    }
+    .PrecoDisconto {
+        color: #000000;
+        line-height: 10px;
+        font-size: 12px;
+        text-shadow: 2px 2px 10px black;
+        padding-bottom: 3px;
+        margin-bottom: 2px;
+    }
 }

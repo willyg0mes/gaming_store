@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <title>DFarm</title>
     <link rel="website icon" type="png" href="/img/discount2.svg">
 </head>
+
 <body class="card">
     <!-- Começo da Div Pai da Pagina Inteira -->
     <div id="pagina">
@@ -22,7 +24,7 @@
                         <h1><a href="/">DiscountsFarm</a></h1>
                     </div>
                 </div>
-                
+
             </div>
             <!--DivLogo termina aqui-->
             <!--menus começam aqui-->
@@ -30,7 +32,7 @@
                 <nav id="nav">
                     <button id="btnMenu">
                         <span id="hamburguer"></span>
-                      </button>
+                    </button>
                     <div id="UlMenu">
                         <ul id="menu">
                             <li class="aMargin"><a href="/">Home</a></li>
@@ -91,11 +93,21 @@
                     </button>
                 </div>
                 <div id="categorias">
-                    <div id="categoraistt"><h2>CATEGORIAS</h2></div>
-                    <div class="categorias"><h3>Multiplayer</h3></div>
-                    <div class="categorias"><h3>Singleplayer</h3></div>
-                    <div class="categorias"><h3>Cooperativo</h3></div>
-                    <div class="categorias"><h3>MMORPG</h3></div>
+                    <div id="categoraistt">
+                        <h2>CATEGORIAS</h2>
+                    </div>
+                    <div class="categorias">
+                        <h3>Multiplayer</h3>
+                    </div>
+                    <div class="categorias">
+                        <h3>Singleplayer</h3>
+                    </div>
+                    <div class="categorias">
+                        <h3>Cooperativo</h3>
+                    </div>
+                    <div class="categorias">
+                        <h3>MMORPG</h3>
+                    </div>
                 </div>
             </div>
             <div class="conteudodireita">
@@ -112,8 +124,8 @@
                 </div>
                 <br>
                 <div style="text-align:center">
-                  <span class="dot"></span>
-                  <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
                 <!-- Div SlideShow termina aqui -->
                 <!-- Começo da Div dos conteudos -->
@@ -125,34 +137,36 @@
                     <!-- Começo da Div pai dos conteudos -->
                     <div id="PaiDosConteudos">
                         <!-- Começo do Fi 1 do Conteudo Linkado -->
-                            <div class="FiConteudo" th:each="stores : ${store}">
-                                <a th:href="${stores.linkGame}" target="_blank">
+                        <div class="FiConteudo" th:each="stores : ${store}">
+                            <a th:href="${stores.linkGame}" target="_blank">
                                 <img th:src="@{/paginas/mostrarImagem/{imagem}(imagem=${stores.nomeImagem})}">
-                                </a>
-                                <div class="BackFi">
-                                    <!-- Titulo E SubTitulo -->
-                                    <div class="DivGamesLayouth3">
-                                        <h3><span th:text="${stores.titulo}"></span>
-                                            <h4><span th:text="${stores.subTitulo}"></span></h4></h3>
-                                    </div>
-                                    <!-- PROMOÇÂO ESPECIAL -->
-                                    <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
-                                    <!-- Termino de promoção -->
-                                    <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
-                                    <!-- Preços e Descontos -->
-                                    <div calss="DivGamesLayoutPrices">
-                                        <!-- Desconto -->
-                                        <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
-                                        <!-- Preço anterior e atual -->
-                                        <div class="DiscontoPreco">
-                                            <!-- Preço anterior -->
-                                            <div class="PrecoOriginal">R$ <span th:text="${stores.precoAnterior}"></span></div>
-                                            <!-- Preço atual -->
-                                            <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span></div>
+                            </a>
+                            <div class="BackFi">
+                                <!-- Titulo E SubTitulo -->
+                                <div class="DivGamesLayouth3">
+                                    <h3><span th:text="${stores.titulo}"></span>
+                                        <h4><span th:text="${stores.subTitulo}"></span></h4>
+                                    </h3>
+                                </div>
+                                <!-- PROMOÇÂO ESPECIAL -->
+                                <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
+                                <!-- Termino de promoção -->
+                                <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
+                                <!-- Preços e Descontos -->
+                                <div class="DivGamesLayoutPrices">
+                                    <!-- Desconto -->
+                                    <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
+                                    <!-- Preço anterior e atual -->
+                                    <div class="DiscontoPreco">
+                                        <!-- Preço anterior -->
+                                        <div class="PrecoOriginal">R$ <span th:text="${stores.precoAnterior}"></span>
                                         </div>
+                                        <!-- Preço atual -->
+                                        <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span></div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         <!-- Fim do Fi 1 do Conteudo Linkado -->
                     </div>
                     <!-- Fim da Div pai dos conteudos -->
@@ -166,8 +180,9 @@
             <p>Todos os Direitos reservados</p>
         </footer>
         <!-- Fim Footer -->
-    <script src="/js/js.js"></script>
+        <script src="/js/js.js"></script>
     </div>
     <!-- Fim da Div Pai da Pagina Inteira -->
 </body>
+
 </html>
