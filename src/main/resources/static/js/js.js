@@ -18,7 +18,7 @@ function toogleMenu(event){
 }
 //final menu
 //começo slide
-btnmenu.addEventListener('click', toogleMenu)
+// btnmenu.addEventListener('click', toogleMenu)
 btnmenu.addEventListener('touchstart', toogleMenu)
 let slideIndex = 0;
 showSlides();
