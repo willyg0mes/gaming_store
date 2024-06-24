@@ -68,6 +68,8 @@ h1 {
     margin: 0 auto;
     width: 250px;
     height: 500px;
+    margin-left: 2px;
+    margin-right: 2px;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -218,7 +220,7 @@ p {
         background-color: aliceblue;
         margin: 0 auto;
         width: 180px;
-        height: 300px;
+        height: 370px;
         display: flex;
         align-items: flex-end;
         flex-wrap: wrap;
@@ -228,7 +230,7 @@ p {
 
     .FiConteudo img {
         width: 180px;
-        height: 200px;
+        height: 270px;
         margin-bottom: -4px;
     }
 
