@@ -20,7 +20,7 @@ public class DataConfig {
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/gaming_store");
 		dataSource.setUsername("root");
-		dataSource.setPassword("Discounts0258!@#");
+		dataSource.setPassword("");
 		
 		return dataSource;
 		
