@@ -36,8 +36,11 @@ src/main/java/com/game/store/DataConfig.java
 src/main/java/com/game/store/DataConfig.java
 src/main/java/com/game/store/DataConfig.java
 src/main/java/com/game/store/DataConfig.java
+<<<<<<< HEAD
 src/main/resources/application.properties
 src/main/java/com/game/store/controllers/StoreController.java
 src/main/java/com/game/store/DataConfig.java
 src/main/resources/application.properties
 src/main/java/com/game/store/controllers/StoreController.java
+=======
+>>>>>>> parent of 4f9b10e (Att)
