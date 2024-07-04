@@ -303,7 +303,11 @@ p {
     .FiConteudo img {
         width: 180px;
         height: 250px;
-        margin-bottom: -4px;
+        margin-bottom: 0px;
+    }
+    #imgfi {
+        display: flex;
+        align-items: end;
     }
 
     .BackFi {
