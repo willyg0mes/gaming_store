@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="431.084 4.74 413.488 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="515.956" y1="37.938" x2="515.956" y2="468.563" id="gradient-0" gradientTransform="matrix(1, 0, 0, 1.000821, 0, -0.031155)">
+      <stop offset="0" style="stop-color: rgb(87.451% 87.451% 87.451%)"/>
+      <stop offset="1" style="stop-color: rgb(49.905% 49.905% 49.905%)"/>
+    </linearGradient>
+  </defs>
+  <polygon style="fill:#FFFFFF;" points="459.844 21.332 820.804 324.74 586.476 309.836 440.1 492.676"/>
+  <path style="fill: rgb(126, 126, 126);" d="M 467.156 37.932 L 797.028 315.212 L 591.14 302.116 L 582.836 301.588 L 577.636 308.084 L 449.116 468.62 L 467.156 37.932 M 452.532 4.74 L 431.084 516.74 L 590.124 318.084 L 844.572 334.268 L 452.532 4.74 Z"/>
+  <polygon style="stroke: rgb(0, 0, 0); fill: url('#gradient-0'); stroke-opacity: 0;" points="467.275 37.938 582.936 302.15 448.977 468.917"/>
+</svg>

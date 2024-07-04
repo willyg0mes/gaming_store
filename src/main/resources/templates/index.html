@@ -13,13 +13,13 @@
 
 <body class="card">
     <!-- Começo da Div Pai da Pagina Inteira -->
-    <div id="pagina">
+    <div class="pagina">
         <!--Começo Div header-->
         <div id="header">
             <!--DivLogo começa aqui-->
             <div id="DivLogo">
                 <div id="DivLogoUm">
-                    <img src="/img/discount2.svg" alt="Logo" id="DiscountLogo">
+                    <img src="/img/discount1.svg" alt="Logo" id="DiscountLogo">
                     <div id="DivLogoDois">
                         <h1><a href="/">DiscountsFarm</a></h1>
                     </div>
@@ -50,8 +50,9 @@
                 </div>
                 <div id="temargb">
                     <p id="tema">Tema Dark</p>
-                    <input id="toggle" class="toggle" type="checkbox">
-                    <label for="toggle"></label>
+                    <input id="redTheme" class="toggle" type="checkbox">
+                    <label for="redTheme"></label>
+                    <button id="redTheme"></button>
                 </div>
             </div>
             <!--menus terminam aqui-->
@@ -69,13 +70,13 @@
                     <a href="/biblioteca">
                         <div class="menulateral" id="menubiblioteca">
                             <img src="/img/library.svg" alt="library">
-                            <h2>Bilioteca</h2>
+                            <h2><s>Bilioteca</s></h2>
                         </div>
                     </a>
                     <a href="/saves">
                         <div class="menulateral" id="menusalvos">
                             <img src="/img/save.svg" alt="saves">
-                            <h2>Salvos</h2>
+                            <h2><s>Salvos</s></h2>
                         </div>
                     </a>
                     <a href="/inserirjogo">
@@ -87,7 +88,19 @@
                     <a href="/users">
                         <div class="menulateral" id="menuusuarios">
                             <img src="/img/users.svg" alt="users">
-                            <h2>Usuários</h2>
+                            <h2><s>Usuários</s></h2>
+                        </div>
+                    </a>
+                    <a href="/login">
+                        <div class="menulateral" id="menuusuarios">
+                            <img src="/img/users.svg" alt="users">
+                            <h2>Login-Testing</h2>
+                        </div>
+                    </a>
+                    <a href="/administrador">
+                        <div class="menulateral" id="menuusuarios">
+                            <img src="/img/users.svg" alt="users">
+                            <h2>Administrador-Testing</h2>
                         </div>
                     </a>
                 </div>
@@ -143,33 +156,35 @@
                     <div id="PaiDosConteudos">
                         <!-- Começo do Fi 1 do Conteudo Linkado -->
                         <div class="FiConteudo" th:each="stores : ${store}">
-                            <a th:href="${stores.linkGame}" target="_blank">
+                            <a id="imgfi" th:href="${stores.linkGame}" target="_blank">
                                 <img th:src="@{/paginas/mostrarImagem/{imagem}(imagem=${stores.nomeImagem})}">
                             </a>
                             <div class="BackFi">
                                 <!-- Titulo E SubTitulo -->
-                                <div class="DivGamesLayouth3">
-                                    <h3><span th:text="${stores.titulo}"></span>
-                                        <h4><span th:text="${stores.subTitulo}"></span></h4>
-                                    </h3>
-                                </div>
-                                <!-- PROMOÇÂO ESPECIAL -->
-                                <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
-                                <!-- Termino de promoção -->
-                                <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
-                                <!-- Preços e Descontos -->
-                                <div class="DivGamesLayoutPrices">
-                                    <!-- Desconto -->
-                                    <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
-                                    <!-- Preço anterior e atual -->
-                                    <div class="DiscontoPreco">
-                                        <!-- Preço anterior -->
-                                        <div class="PrecoOriginal">R$ <span th:text="${stores.precoAnterior}"></span>
-                                        </div>
-                                        <!-- Preço atual -->
-                                        <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span></div>
+                                <section class="BackFiI">
+                                    <div class="DivGamesLayouth3">
+                                        <h3><span th:text="${stores.titulo}"></span>
+                                            <h4><span th:text="${stores.subTitulo}"></span></h4>
+                                        </h3>
                                     </div>
-                                </div>
+                                    <!-- PROMOÇÂO ESPECIAL -->
+                                    <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
+                                    <!-- Termino de promoção -->
+                                    <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
+                                    <!-- Preços e Descontos -->
+                                    <div class="DivGamesLayoutPrices">
+                                        <!-- Desconto -->
+                                        <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
+                                        <!-- Preço anterior e atual -->
+                                        <div class="DiscontoPreco">
+                                            <!-- Preço anterior -->
+                                            <div class="PrecoOriginal">R$ <span th:text="${stores.precoAnterior}"></span>
+                                            </div>
+                                            <!-- Preço atual -->
+                                            <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span></div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                         <!-- Fim do Fi 1 do Conteudo Linkado -->
@@ -181,8 +196,13 @@
         </div>
         <!-- Começo Footer -->
         <footer>
-            <p><b>DiscountsFarm&copy;</b><sup>2023</sup></p>
-            <p>Todos os Direitos reservados</p>
+            <div>
+                <p><b>DiscountsFarm&copy;</b><sup>2023</sup></p>
+                <p>Todos os Direitos reservados</p>
+            </div>
+            <div>
+                <p>Desenvolvido por <b>Willy G</b></p>
+            </div>
         </footer>
         <!-- Fim Footer -->
         <script src="/js/js.js"></script>

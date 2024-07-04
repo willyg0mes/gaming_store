@@ -1,20 +1,20 @@
-//começo background rotate
-const toggle = document.getElementById('toggle')
 
-  toggle.addEventListener('change' , () => {
-    document.body.classList.toggle('rgb')
-  })
-  toggle.addEventListener('change' , () => {
-    document.conteudodireita.classList.toggle('temab')
-  })
-//final background rotate
+//começo background RGB
+const toggle = document.getElementById('toggle')
+toggle.addEventListener('change', () => {
+  document.body.classList.toggle('rgb')
+})
+toggle.addEventListener('change', () => {
+  document.querySelector('.pagina').classList.toggle('temab')
+})
+//final background RGB
 //começo menu
 const btnmenu = document.getElementById('btnMenu')
 
-function toogleMenu(event){
-    if (event.type === 'touchstart') event.preventDefault
-    const menu = document.getElementById('menu')
-    nav.classList.toggle('active')
+function toogleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault
+  const menu = document.getElementById('menu')
+  nav.classList.toggle('active')
 }
 //final menu
 //começo slide
@@ -28,24 +28,23 @@ function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) { slideIndex = 1 }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" activedot", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " activedot";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " activedot";
   setTimeout(showSlides, 6500); // transição das imagens em 6 segundos
 }
 //final slide
 //Uploud Imagem
-function upload()
-{
+function upload() {
   var dd1 = document.getElementById("d1");
   var dd2 = document.getElementById("file");
-  var image= new SimpleImage(dd2);
+  var image = new SimpleImage(dd2);
   image.drawTo(dd1);
-  
+
 }

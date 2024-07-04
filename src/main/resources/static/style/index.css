@@ -1,3 +1,9 @@
+:root {
+    --back-cont: #161010b2;
+    --nav: #1d1919;
+    --backfi: linear-gradient(0deg, rgb(170, 170, 170), rgba(255, 255, 255, -0.17));
+}
+
 #DivBotoesPai {
     width: 100%;
     height: auto;
@@ -28,12 +34,12 @@
     max-width: 1500px;
     height: auto;
     margin: 0 auto;
-    background-color: #551e1eb2;
+    background-color: var(--back-cont);
     margin-top: 1%;
     margin-bottom: 1%;
 
     border-radius: 1rem 0 0 0;
-    box-shadow: 2px 1px 5px #3a1515;
+    box-shadow: 2px 1px 5px #2e2c2c;
 
 
 }
@@ -41,7 +47,7 @@
 #ConteudoGame {
     width: 100%;
     height: 40px;
-    background-color: #770000b2;
+    background-color: var(--nav);
     border-radius: 1rem 0 0 0;
     margin-bottom: 3%;
     padding-bottom: 1%;
@@ -67,7 +73,7 @@ h1 {
     background-color: aliceblue;
     margin: 0 auto;
     width: 250px;
-    height: 500px;
+    height: 350px;
     margin-left: 4px;
     margin-right: 4px;
     display: flex;
@@ -75,14 +81,12 @@ h1 {
     flex-wrap: wrap;
     margin-bottom: 5rem;
     box-shadow: 3px 3px 9px black;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
 }
 
-.FiConteudo:hover {
-    background-color: #551e1e;
-    transform: scale(1.05);
-    transition: all .2s;
-    filter: brightness(1.25);
-}
 
 .FiConteudo img {
     width: 250px;
@@ -90,15 +94,79 @@ h1 {
     margin-bottom: -4px;
 }
 
-.BackFi {
-    /* background-image: url(../img/divgameslayout.jpg); */
-    background: linear-gradient(45deg, rgb(170, 2, 2), rgba(172, 30, 30, 0.83));
-    width: 250px;
-    height: 150px;
-    text-align: center;
-    color: #ffff;
+#imgfi {
+    width: 100%;
+    height: 100%;
+    /* border-radius: inherit; */
 }
 
+#imgfi img {
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.BackFi {
+    /* background-image: url(../img/divgameslayout.jpg); */
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+
+}
+.BackFi:hover{
+    scale: 1;
+    opacity: 1;
+}
+
+.BackFi h3,
+h4,
+h5,
+.BackFi {
+    /* opacity: 0; */
+    transition: 0.4s 0.2s ease;
+}
+
+.FiConteudo::after {
+    /* content: ""; */
+    position: absolute;
+    /* inset: 0; */
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.FiConteudo:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.FiConteudo:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.FiConteudo:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+    transition: all .2s;
+    filter: brightness(1.25);
+}
+.BackFiI {
+    width: 250px;
+    height: 150px;
+    background: var(--backfi);
+    position: absolute;
+
+}
 .Disconto {
     float: left;
     line-height: 34px;
@@ -182,6 +250,7 @@ p {
 
 .DivGamesLayouth3 {
     height: 50px;
+    text-shadow: 1px 1px black;
 }
 
 #DivGamesLayoutSemDescontoDois {
@@ -200,11 +269,13 @@ p {
 .DivGamesLayouth2 {
     width: 100%;
     height: 25px;
+    text-shadow: 1px 1px black;
 }
 
 .DivGamesLayoutPromo {
     width: 100%;
     height: 25px;
+    text-shadow: 1px 1px black;
 }
 
 .DivGamesLayoutPrices {
@@ -220,7 +291,7 @@ p {
         background-color: aliceblue;
         margin: 0 auto;
         width: 180px;
-        height: 350px;
+        height: 250px;
         display: flex;
         align-items: flex-end;
         flex-wrap: wrap;
@@ -236,13 +307,15 @@ p {
 
     .BackFi {
         /* background-image: url(../img/divgameslayout.jpg); */
-        background: linear-gradient(45deg, rgb(170, 2, 2), rgba(172, 30, 30, 0.83));
-        width: 250px;
+        width: 180px;
         height: 100px;
-        text-align: center;
+        /* text-align: center; */
         color: #ffff;
     }
-
+    .BackFiI {
+        width: 180px;
+        /* height: 100px; */
+    }
     .DivGamesLayouth3 {
         height: 33px;
         font-size: 0.8em;
@@ -254,16 +327,19 @@ p {
     h4 {
         font-size: 1em;
     }
+
     .DivGamesLayouth2 {
         width: 100%;
         font-size: 0.7em;
         height: 15px;
     }
+
     .DivGamesLayoutPromo {
         width: 100%;
         height: 18px;
         font-size: 0.7em;
     }
+
     .Disconto {
         float: left;
         line-height: 22px;
@@ -280,6 +356,7 @@ p {
         border-right: none;
         font-size: 1em;
     }
+
     .DiscontoPreco {
         line-height: 2px;
         padding: 0 1px 0 8px;
@@ -294,6 +371,7 @@ p {
         /* border-left: none; */
         font-size: 0.1em;
     }
+
     .PrecoOriginal {
         position: relative;
         /* width: fit-content; */
@@ -302,6 +380,7 @@ p {
         line-height: 12px;
         padding-top: 1px;
     }
+
     .PrecoDisconto {
         color: #000000;
         line-height: 10px;
