@@ -47,3 +47,4 @@ src/main/java/com/game/store/DataConfig.java
 src/main/resources/application.properties
 src/main/java/com/game/store/DataConfig.java
 src/main/java/com/game/store/controllers/StoreController.java
+src/main/resources/application.properties
