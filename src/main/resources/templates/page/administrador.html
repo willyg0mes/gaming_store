@@ -19,7 +19,7 @@
             <!--DivLogo começa aqui-->
             <div id="DivLogo">
                 <div id="DivLogoUm">
-                    <img src="/img/discount2.svg" alt="Logo" id="DiscountLogo">
+                    <img src="/img/discount1.svg" alt="Logo" id="DiscountLogo">
                     <div id="DivLogoDois">
                         <h1><a href="/">DiscountsFarm</a></h1>
                     </div>
@@ -42,9 +42,14 @@
                     </div>
                 </nav>
                 <div id="temargb">
-                    <p id="tema">Fru Fru</p>
-                    <input id="toggle" class="toggle" type="checkbox">
-                    <label for="toggle"></label>
+                    <p id="tema">BK RGB</p>
+                    <input id="togglergb" class="toggle" type="checkbox">
+                    <label for="togglergb"></label>
+                </div>
+                <div id="temargb">
+                    <p id="tema">Tema Red</p>
+                    <input class="toggle" type="checkbox" onchange="toggleTheme()" id="togglered">
+                    <label for="togglered"></label>
                 </div>
             </div>
             <!--menus terminam aqui-->
@@ -100,26 +105,28 @@
                         </a>
                         <div class="BackFi">
                             <!-- Titulo E SubTitulo -->
-                            <div class="DivGamesLayouth3">
-                                <h3><span th:text="${stores.titulo}"></span>
-                                    <h4><span th:text="${stores.subTitulo}"></span></h4></h3>
-                            </div>
-                            <!-- PROMOÇÂO ESPECIAL -->
-                            <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
-                            <!-- Termino de promoção -->
-                            <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
-                            <!-- Preços e Descontos -->
-                            <div class="DivGamesLayoutPrices">
-                                <!-- Desconto -->
-                                <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
-                                <!-- Preço anterior e atual -->
-                                <div class="DiscontoPreco">
-                                    <!-- Preço anterior -->
-                                    <div class="PrecoOriginal">R$ <span th:text="${stores.precoAnterior}"></span></div>
-                                    <!-- Preço atual -->
-                                    <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span></div>
+                            <section class="BackFiI">
+                                <div class="DivGamesLayouth3">
+                                    <h3><span th:text="${stores.titulo}"></span>
+                                        <h4><span th:text="${stores.subTitulo}"></span></h4></h3>
                                 </div>
-                            </div>
+                                <!-- PROMOÇÂO ESPECIAL -->
+                                <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
+                                <!-- Termino de promoção -->
+                                <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
+                                <!-- Preços e Descontos -->
+                                <div class="DivGamesLayoutPrices">
+                                    <!-- Desconto -->
+                                    <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
+                                    <!-- Preço anterior e atual -->
+                                    <div class="DiscontoPreco">
+                                        <!-- Preço anterior -->
+                                        <div class="PrecoOriginal">R$ <span th:text="${stores.precoAnterior}"></span></div>
+                                        <!-- Preço atual -->
+                                        <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span></div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div id="BtAlterarExcluir">
                             <button type="submit" class="btn btn-outline-primary BotaoEnviar">

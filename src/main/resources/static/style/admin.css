@@ -1,3 +1,4 @@
+
 #BtAlterarExcluir {
     display: flex;
     width: 250px;
@@ -31,10 +32,13 @@
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-color: #0367a6;
-    background-image: linear-gradient(90deg, #0367a6 0%, #008997 74%);
+    border-color: #424242;
+    background-image: linear-gradient(90deg, var(--blackl) 0%, var(--grayl) 74%);
 }
 p {
 	text-align: center;
     color: #ffff;
+}
+#menuadm {
+    background-color: var(--btn-lat-at);
 }

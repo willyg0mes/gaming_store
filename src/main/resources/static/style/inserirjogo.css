@@ -101,8 +101,8 @@ input#file {
   color: white;
   font-weight: bold;
   margin-bottom: 2rem;
-  border-color: #0367a6;
-  background-image: linear-gradient(90deg, #0367a6 0%, #008997 74%);
+  border-color: #000000;
+  background-image: linear-gradient(90deg, var(--blackl) 0%, var(--grayl) 74%);
 }
 canvas
 {
@@ -122,3 +122,6 @@ p {
     color: #ffff;
 }
 
+#menuinserir {
+  background-color: var(--btn-lat-at);
+}

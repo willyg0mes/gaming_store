@@ -28,13 +28,10 @@ header h1 {
     max-width: 1500px;
 
 }
-
 :root {
 	/* COLORS */
 	--white: #e9e9e9;
 	--gray: #333;
-	--blackl: #202020;
-	--grayl:rgb(59, 59, 59);
 	--lightblue: #008997;
 
 	/* RADII */
@@ -243,4 +240,7 @@ body {
 p {
 	text-align: center;
     color: #ffff;
+}
+#menulogin {
+	background-color: var(--btn-lat-at);
 }

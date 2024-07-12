@@ -10,12 +10,15 @@
   initial-value: 132deg;
   inherits: false;
 }
-
-:root {
+.srgb{
+  --bckrgb:transparent;
+}
+.themedark{
   --card-height: 65vh;
   --card-width: calc(var(--card-height) / 1.5);
   --nav:#1d1919;
   --menu-esq:#121212;
+  --btn-lat-at:rgb(121, 121, 121);
   --btn-lat:#423c3c42;
   --btn-lat-hov:rgb(82, 82, 82);
   --back:linear-gradient(45deg, rgb(82, 82, 82), rgb(71, 71, 71), rgb(27, 27, 27));
@@ -25,14 +28,24 @@
   --foot:rgb(22, 21, 21);
   --pesq:#7f7f7f;
   --pesqmin:#a5a5a5a1;
+  --blackl: #202020;
+	--grayl:rgb(59, 59, 59);
 }
-[data-theme="redl"]{
+.themered{
   --nav:#770000;
   --menu-esq:#721E1E;
+  --btn-lat-at:rgb(184, 0, 0);
   --btn-lat:#f8000042;
-  --back:linear-gradient(45deg, rgba(198, 12, 12, 0.349), rgba(83, 9, 9, 0.486), rgba(135, 8, 8, 0.589));
+  --btn-lat-hov:rgb(95, 1, 1);
+  --back:linear-gradient(45deg, rgba(198, 12, 12), rgba(83, 9, 9), rgba(135, 8, 8));
   --back-cont:#551e1eb2;
   --backfi:linear-gradient(45deg, rgb(170, 2, 2), rgba(172, 30, 30, 0.83));
+  --foot: rgb(61, 0, 0);
+  --pesq:#c23939;
+  --pesqmin:#aa5151a1;
+  --blackl: #360000;
+	--grayl:rgb(78, 1, 1);
+
 }
 body.rgb {
   /* background: #191c29; */
@@ -67,10 +80,10 @@ body.rgb::after {
   left: 0;
   right: 0;
   z-index: -1;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   margin: 0 auto;
-  transform: scale(0.8);
+  /* transform: scale(0.8); */
   filter: blur(calc(var(--card-height) / 6));
   background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
   opacity: 1;
@@ -134,45 +147,15 @@ body {
   font-weight: bold;
   font-size: 0.7em;
 }
-#redTheme {
-  width: 12px;
-  height: 10px;
-  background: lightgray;
-  display: block;
-  position: relative;
-  border-radius: 20px;
-  padding: 2px;
-  margin: 4px 5px;
-  transition: 200ms;
-  cursor: pointer;
-  box-sizing: unset;
-  visibility: hidden;
+
+#togglergb {
   position: relative;
   display: none;
 }
-#redTheme:before {
-  content: '';
-  visibility: hidden;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
-  display: block;
-  border-radius: 50%;
-  right: unset;
-  left: 2px;
-  top: 2px;
-  transition: 200ms;
-}
-#redTheme:checked {
-  background: blue;
-}
-
-#toggle {
+#togglered {
   position: relative;
   display: none;
 }
-
 .toggle+label {
   width: 12px;
   height: 10px;
@@ -502,14 +485,14 @@ footer div {
   height: 15px;
   width: 15px;
   margin: 0 2px 8px;
-  background-color: #bbb;
+  background-color: #868686;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .activedot {
-  background-color: #717171;
+  background-color: #ffffff;
 }
 
 /*Animação fade-in*/
