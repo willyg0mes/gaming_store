@@ -137,41 +137,6 @@
                 <div class="slideshow-container">
                     <div class="mySlides fade">
                         <img src="/img/backgroundnoblur1500x500.png" style="width:100%">
-                        <div class="FiConteudo" th:each="stores : ${store}">
-                            <a id="imgfi" th:href="${stores.linkGame}" target="_blank">
-                                <img th:src="@{/paginas/mostrarImagem/{imagem}(imagem=${stores.nomeImagem})}">
-                                <div class="BackFi">
-                                    <!-- Titulo E SubTitulo -->
-                                    <section class="BackFiI">
-                                        <div class="DivGamesLayouth3">
-                                            <h3><span th:text="${stores.titulo}"></span>
-                                                <h4><span th:text="${stores.subTitulo}"></span></h4>
-                                            </h3>
-                                        </div>
-                                        <!-- PROMOÇÂO ESPECIAL -->
-                                        <h5 class="DivGamesLayouth2"><span th:text="${stores.promocao}"></h5>
-                                        <!-- Termino de promoção -->
-                                        <div class="DivGamesLayoutPromo"><span th:text="${stores.data}"></span></div>
-                                        <!-- Preços e Descontos -->
-                                        <div class="DivGamesLayoutPrices">
-                                            <!-- Desconto -->
-                                            <div class="Disconto">R$ <span th:text="${stores.preco}"></span></div>
-                                            <!-- Preço anterior e atual -->
-                                            <div class="DiscontoPreco">
-                                                <!-- Preço anterior -->
-                                                <div class="PrecoOriginal">R$ <span
-                                                        th:text="${stores.precoAnterior}"></span>
-                                                </div>
-                                                <!-- Preço atual -->
-                                                <div class="PrecoDisconto">- <span th:text="${stores.desconto}"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-                            </a>
-
-                        </div>
                     </div>
                     <div class="mySlides fade">
                         <img src="/img/background1500x500.gif" style="width:100%">
@@ -241,7 +206,7 @@
                 <p>Todos os Direitos reservados</p>
             </div>
             <div>
-                <p>Desenvolvido por <b>Willy G</b></p>
+                <p>Desenvolvido por <b><a href="https://github.com/willyg0mes" target="_blank">Willy G<a></b></p>
             </div>
         </footer>
         <!-- Fim Footer -->
