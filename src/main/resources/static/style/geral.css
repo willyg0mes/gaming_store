@@ -23,7 +23,7 @@
   --btn-lat-hov:rgb(82, 82, 82);
   --back:linear-gradient(45deg, rgb(82, 82, 82), rgb(71, 71, 71), rgb(27, 27, 27));
   --back-cont:#161010b2;
-  --backfi:linear-gradient(45deg, rgb(170, 170, 170), rgba(255, 255, 255, 0.83));
+  --backfi: linear-gradient(45deg, rgb(80 80 80), rgb(136 136 136 / 83%));
   --bshadow:-1px 0px 3px 1px #9b999930;
   --foot:rgb(22, 21, 21);
   --pesq:#7f7f7f;
