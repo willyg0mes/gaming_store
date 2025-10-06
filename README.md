@@ -1,2 +1,3 @@
 # gaming_store
- Discounts games
+ Evolução do projeto em deal-hunt
+ Em desenvolvimento...
